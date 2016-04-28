@@ -1,0 +1,259 @@
+.
+├── config.json
+├── includes
+│   ├── config.php
+│   └── helpers.php
+├── output.txt
+├── public
+│   ├── css
+│   │   ├── bootstrap.min.css
+│   │   └── styles.css
+│   ├── fonts
+│   │   ├── glyphicons-halflings-regular.eot
+│   │   ├── glyphicons-halflings-regular.svg
+│   │   ├── glyphicons-halflings-regular.ttf
+│   │   ├── glyphicons-halflings-regular.woff
+│   │   └── glyphicons-halflings-regular.woff2
+│   ├── img
+│   │   └── logo.png
+│   ├── index.php
+│   ├── js
+│   │   ├── bootstrap.min.js
+│   │   ├── jquery-1.11.3.min.js
+│   │   └── scripts.js
+│   ├── login.php
+│   ├── logout.php
+│   ├── quote.php
+│   └── register.php
+├── vendor
+│   └── library50-php-5
+│       └── CS50
+│           ├── CS50.php
+│           └── share
+│               └── php-openid-2.3.0
+│                   ├── Auth
+│                   │   ├── OpenID
+│                   │   │   ├── AX.php
+│                   │   │   ├── Association.php
+│                   │   │   ├── BigMath.php
+│                   │   │   ├── Consumer.php
+│                   │   │   ├── CryptUtil.php
+│                   │   │   ├── DatabaseConnection.php
+│                   │   │   ├── DiffieHellman.php
+│                   │   │   ├── Discover.php
+│                   │   │   ├── DumbStore.php
+│                   │   │   ├── Extension.php
+│                   │   │   ├── FileStore.php
+│                   │   │   ├── HMAC.php
+│                   │   │   ├── Interface.php
+│                   │   │   ├── KVForm.php
+│                   │   │   ├── MDB2Store.php
+│                   │   │   ├── MemcachedStore.php
+│                   │   │   ├── Message.php
+│                   │   │   ├── MySQLStore.php
+│                   │   │   ├── Nonce.php
+│                   │   │   ├── PAPE.php
+│                   │   │   ├── Parse.php
+│                   │   │   ├── PostgreSQLStore.php
+│                   │   │   ├── PredisStore.php
+│                   │   │   ├── SQLStore.php
+│                   │   │   ├── SQLiteStore.php
+│                   │   │   ├── SReg.php
+│                   │   │   ├── Server.php
+│                   │   │   ├── ServerRequest.php
+│                   │   │   ├── TrustRoot.php
+│                   │   │   └── URINorm.php
+│                   │   ├── OpenID.php
+│                   │   └── Yadis
+│                   │       ├── HTTPFetcher.php
+│                   │       ├── Manager.php
+│                   │       ├── Misc.php
+│                   │       ├── ParanoidHTTPFetcher.php
+│                   │       ├── ParseHTML.php
+│                   │       ├── PlainHTTPFetcher.php
+│                   │       ├── XML.php
+│                   │       ├── XRDS.php
+│                   │       ├── XRI.php
+│                   │       ├── XRIRes.php
+│                   │       └── Yadis.php
+│                   ├── CHANGES-2.1.0
+│                   ├── COPYING
+│                   ├── NEWS
+│                   ├── README
+│                   ├── README.Debian
+│                   ├── README.git
+│                   ├── Tests
+│                   │   ├── Auth
+│                   │   │   ├── OpenID
+│                   │   │   │   ├── AX.php
+│                   │   │   │   ├── Association.php
+│                   │   │   │   ├── AssociationResponse.php
+│                   │   │   │   ├── AuthRequest.php
+│                   │   │   │   ├── BigMath.php
+│                   │   │   │   ├── Consumer.php
+│                   │   │   │   ├── CryptUtil.php
+│                   │   │   │   ├── DiffieHellman.php
+│                   │   │   │   ├── Discover_OpenID.php
+│                   │   │   │   ├── Extension.php
+│                   │   │   │   ├── HMAC.php
+│                   │   │   │   ├── KVForm.php
+│                   │   │   │   ├── MemStore.php
+│                   │   │   │   ├── Message.php
+│                   │   │   │   ├── Negotiation.php
+│                   │   │   │   ├── Nonce.php
+│                   │   │   │   ├── OpenID_Yadis.php
+│                   │   │   │   ├── PAPE.php
+│                   │   │   │   ├── Parse.php
+│                   │   │   │   ├── RPVerify.php
+│                   │   │   │   ├── SReg.php
+│                   │   │   │   ├── Server.php
+│                   │   │   │   ├── StoreTest.php
+│                   │   │   │   ├── TestUtil.php
+│                   │   │   │   ├── TrustRoot.php
+│                   │   │   │   ├── URINorm.php
+│                   │   │   │   ├── Util.php
+│                   │   │   │   ├── VerifyDisco.php
+│                   │   │   │   └── data
+│                   │   │   │       ├── dhexch
+│                   │   │   │       ├── dhpriv
+│                   │   │   │       ├── hmac-sha1.txt
+│                   │   │   │       ├── hmac-sha256.txt
+│                   │   │   │       ├── linkparse.txt
+│                   │   │   │       ├── n2b64
+│                   │   │   │       ├── openid.html
+│                   │   │   │       ├── test_discover_openid.html
+│                   │   │   │       ├── test_discover_openid2.html
+│                   │   │   │       ├── test_discover_openid2_xrds.xml
+│                   │   │   │       ├── test_discover_openid2_xrds_no_local_id.xml
+│                   │   │   │       ├── test_discover_openid_1_and_2.html
+│                   │   │   │       ├── test_discover_openid_1_and_2_xrds.xml
+│                   │   │   │       ├── test_discover_openid_1_and_2_xrds_bad_delegate.xml
+│                   │   │   │       ├── test_discover_openid_and_yadis.html
+│                   │   │   │       ├── test_discover_openid_no_delegate.html
+│                   │   │   │       ├── test_discover_openid_ssl.xml
+│                   │   │   │       ├── test_discover_yadis_0entries.xml
+│                   │   │   │       ├── test_discover_yadis_2_bad_local_id.xml
+│                   │   │   │       ├── test_discover_yadis_2entries_delegate.xml
+│                   │   │   │       ├── test_discover_yadis_2entries_idp.xml
+│                   │   │   │       ├── test_discover_yadis_another_delegate.xml
+│                   │   │   │       ├── test_discover_yadis_idp.xml
+│                   │   │   │       ├── test_discover_yadis_idp_delegate.xml
+│                   │   │   │       ├── test_discover_yadis_no_delegate.xml
+│                   │   │   │       ├── trustroot.txt
+│                   │   │   │       └── urinorm.txt
+│                   │   │   └── Yadis
+│                   │   │       ├── DiscoverData.php
+│                   │   │       ├── Discover_Yadis.php
+│                   │   │       ├── ParseHTML.php
+│                   │   │       ├── TestUtil.php
+│                   │   │       ├── XRDS.php
+│                   │   │       ├── XRI.php
+│                   │   │       ├── Yadis.php
+│                   │   │       └── data
+│                   │   │           ├── README
+│                   │   │           ├── accept.txt
+│                   │   │           ├── brian.multi.xrds
+│                   │   │           ├── brian.multi_uri.xrds
+│                   │   │           ├── brian.xrds
+│                   │   │           ├── brian_priority.xrds
+│                   │   │           ├── delegated-20060809-r1.xrds
+│                   │   │           ├── delegated-20060809-r2.xrds
+│                   │   │           ├── delegated-20060809.xrds
+│                   │   │           ├── example-xrds.xml
+│                   │   │           ├── no-xrd.xml
+│                   │   │           ├── not-xrds.xml
+│                   │   │           ├── pip.xrds
+│                   │   │           ├── prefixsometimes.xrds
+│                   │   │           ├── ref.xrds
+│                   │   │           ├── sometimesprefix.xrds
+│                   │   │           ├── spoof1.xrds
+│                   │   │           ├── spoof2.xrds
+│                   │   │           ├── spoof3.xrds
+│                   │   │           ├── subsegments.xrds
+│                   │   │           ├── test1-discover.txt
+│                   │   │           ├── test1-parsehtml.txt
+│                   │   │           ├── test1-xrd.xml
+│                   │   │           └── uri_priority.xrds
+│                   │   └── TestDriver.php
+│                   ├── admin
+│                   │   ├── adminutil.php
+│                   │   ├── brace_style.pl
+│                   │   ├── checkimport
+│                   │   ├── checkimports
+│                   │   ├── darcs-ignore
+│                   │   ├── docblocks
+│                   │   ├── docblocks.pl
+│                   │   ├── findallphp
+│                   │   ├── findglobals
+│                   │   ├── findphp
+│                   │   ├── fixperms
+│                   │   ├── gettlds.py
+│                   │   ├── library-name
+│                   │   ├── longlines.pl
+│                   │   ├── makedoc.sh
+│                   │   ├── mathlib
+│                   │   ├── nobadbraces
+│                   │   ├── nobadcase
+│                   │   ├── nolonglines
+│                   │   ├── notabs
+│                   │   ├── open_tag
+│                   │   ├── otb_test.php
+│                   │   ├── package.xml
+│                   │   ├── package2.xml
+│                   │   ├── packagexml.py
+│                   │   ├── phpaliases.py
+│                   │   ├── prepare-release
+│                   │   ├── runtests
+│                   │   ├── syntaxcheck
+│                   │   ├── texttest.php
+│                   │   ├── tutorials
+│                   │   │   └── OpenID
+│                   │   │       └── OpenID.pkg
+│                   │   ├── webtest.php
+│                   │   └── xmlconfig.py
+│                   ├── composer.json
+│                   ├── contrib
+│                   │   ├── google
+│                   │   │   └── php-openid-apps-discover-1.0.1.tar.gz
+│                   │   ├── signed_assertions
+│                   │   │   ├── AP.php
+│                   │   │   └── SAML.php
+│                   │   └── upgrade-store-1.1-to-2.0
+│                   └── examples
+│                       ├── README
+│                       ├── consumer
+│                       │   ├── common.php
+│                       │   ├── finish_auth.php
+│                       │   ├── index.php
+│                       │   └── try_auth.php
+│                       ├── detect.php
+│                       ├── discover.php
+│                       └── server
+│                           ├── index.php
+│                           ├── lib
+│                           │   ├── actions.php
+│                           │   ├── common.php
+│                           │   ├── render
+│                           │   │   ├── about.php
+│                           │   │   ├── idpXrds.php
+│                           │   │   ├── idpage.php
+│                           │   │   ├── login.php
+│                           │   │   ├── trust.php
+│                           │   │   └── userXrds.php
+│                           │   ├── render.php
+│                           │   └── session.php
+│                           ├── openid-server.css
+│                           ├── server.php
+│                           └── setup.php
+└── views
+    ├── apology.php
+    ├── dump.php
+    ├── footer.php
+    ├── header.php
+    ├── login_form.php
+    ├── portfolio.php
+    ├── quote_form.php
+    ├── quote_result.php
+    └── register_form.php
+
+32 directories, 224 files
